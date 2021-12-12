@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #31394c;
+  color: #fff;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  line-height: 59px;
+}
+
+.stopwatch {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  width: 270px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.time {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 187px;
+}
+
+button {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+#playBtn {
+  display: block;
+}
+#pauseBtn {
+  display: none;
+}
