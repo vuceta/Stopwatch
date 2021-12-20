@@ -27,11 +27,11 @@ function timeToString(time) {
   let diffInMs = (diffInSec - ss) * 1000;
   let ms = Math.floor(diffInMs);
 
-  let formattedHH = mm.toString().padStart(2, "0");
-  let formattedMM = ss.toString().padStart(2, "0");
-  let formattedSS = ms.toString().padStart(2, "0");
+  let formattedMM = mm.toString().padStart(2, "0");
+  let formattedSS = ss.toString().padStart(2, "0");
+  let formattedMS = ms.toString().padStart(3, "0");
 
-  return `${formattedHH}:${formattedMM}:${formattedSS}`;
+  return `${formattedMM}:${formattedSS}:${formattedMS}`;
 }
 
 function start() {
